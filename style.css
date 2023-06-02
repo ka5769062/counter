@@ -1,0 +1,24 @@
+body{
+
+padding: 0;
+margin: 0;
+
+
+}
+
+.container{
+
+    background-color: #F1F5F8;
+     text-align: center;
+     margin: 100px;
+     height: 300px;
+     padding-top: 40px;
+
+}
+
+.headng{
+
+    color: #102B42;
+
+
+}

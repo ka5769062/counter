@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="headng" style="font-size: 50px;">Counter</h1>
+
+        <h2 id="show" style="font-size: 50px; color: darkblue; "> </h2>
+
+        <button id="dec" onclick="myfunction2()"> DECREASE</button>
+        <button id="res" onclick="myfunction3()"> RESET</button>
+        <button id="inc" onclick="myfunction1()"> INCREASE</button>
+
+    </div>
+
+    <script>
+
+
+        let count = 0;
+
+
+        function myfunction1() {
+
+            count = count + 1
+            document.getElementById("show").innerText = count;
+
+        }
+
+        function myfunction2() {
+
+            if (count) {
+
+                --count
+                document.getElementById("show").innerText = count;
+                
+                console.log( typeof(count))
+            }
+
+        }
+
+
+        function myfunction3() {
+
+
+            document.getElementById("show").innerHTML = "";
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
